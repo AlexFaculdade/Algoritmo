@@ -3,12 +3,19 @@
 using namespace std;
 
 int main() {
-    float deposito, rendimentoMensal, valorTotal;
-    rendimentoMensal = 0.1;
-    cout << "Coloque o valor do deposito" << endl;
-    cin >> deposito;
-    valorTotal = deposito +  (deposito * rendimentoMensal);
-    cout << "O valor com o rendimento é: " << valorTotal << endl;
-    cin >> deposito;
+
+    float temp;
+    cout << "Temperatura: " << endl;
+    cin >> temp;
+    if(temp < 0) {
+        cout << "Congelante" << endl;
+    } else if(temp==0) {
+        cout << "Igual a 0" << endl;
+    } else if(temp >0) {
+        cout << "Acima de zero" << endl;
+    }
+
+    cin >> temp;
+
     return 0;
-} 
+}

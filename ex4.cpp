@@ -6,13 +6,13 @@ int main() {
     int nota;
     cout << "Nota: " << endl;
     cin >> nota;
-    if(nota < 0 || nota> 10) {
-        cout << "Nota invalida" << endl;
+    if(nota >= 6) {
+        cout << "Aprovado" << endl;
     } else {
-        cout << "Nota valida" << endl;
+        cout << "Reprovado" << endl;
     }
 
     cin >> nota;
 
-    return 0; 
+    return 0;
 }

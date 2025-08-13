@@ -2,14 +2,15 @@
 
 using namespace std;
 
-int main() {
+int main () {
     int idade;
     cout << "Idade: " << endl;
     cin >> idade;
-    if(idade < 26) {
-        cout << "Jovem" << endl;
+
+    if(idade >= 18) {
+        cout << "Maior de idade" << endl;
     } else {
-        cout << "Adulto" << endl;
+        cout << "Menor de idade" << endl;
     }
 
     cin >> idade;

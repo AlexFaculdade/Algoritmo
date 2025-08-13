@@ -3,12 +3,17 @@
 using namespace std;
 
 int main() {
-    int num1;
-    int result;
-    cout << "Digite o valor para dobrar: " << endl;
-    cin >> num1;
-    result = num1*2;
-    cout << "O dobro de: " << num1 << " é: " << result << endl;
+    float num;
+    cout << "Num: " << endl;
+    cin >> num;
+    if(num > 0 ) {
+        cout << "Positivo" << endl;
+    } else if(num == 0) {
+        cout << "Neutro" << endl;
+    } else {
+        cout << "Negativo" << endl;
+    }
 
+    cin >> num;
     return 0;
 }

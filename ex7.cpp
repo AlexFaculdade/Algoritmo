@@ -3,17 +3,21 @@
 using namespace std;
 
 int main() {
-    float soma, sub, mult, div, num1, num2;
-    cout << "Type The first number: " << endl;
-    cin >>  num1;
-    cout << "Type the second number: " << endl;
+    float num, num2;
+    cout << "Num1: " << endl;
+    cin >> num;
+    cout << "Num2: " << endl;
     cin >> num2;
-    soma = num1+num2;
-    sub =  num1-num2;
-    mult = num1*num2;
-    div = num1/num2;
-    cout << "soma: " << soma << ", sub: " << sub << " mult: " << mult << " e div: " << div << endl; 
-    cin >> num1;
+
+    if(num > num2 ){
+        cout << "o primeiro numero é maior: " << num << endl;
+    } else if(num == num2 ) {
+        cout << "Os numeros sao iguais" << endl;
+    } else {
+        cout << "o segundo numero é maior: " << num2 << endl;
+    }
+
+    cin >> num;
 
     return 0;
 }

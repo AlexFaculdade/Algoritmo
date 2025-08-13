@@ -3,15 +3,21 @@
 using namespace std;
 
 int main() {
-    float imc, peso, altura;
-    cout << "Digite o peso em Kg: " << endl;
-    cin >> peso;
-    cout << "Digite a altura m: " << endl;
-    cin >> altura;
 
-    imc = peso/(altura*altura);
-    cout << "O IMC é: " << imc << endl;
-    cin >> imc;
+    float consumo, valor;
+    cout << "Consumo de energia em kWh: " << endl;
+    cin >> consumo;
+
+    if(consumo > 200) {
+        valor = consumo * 0.9;
+    } else if(consumo <= 200 && consumo > 100) {
+        valor = consumo * 0.7;
+    } else {
+        valor = consumo * 0.5;
+    }
+
+    cout << "O valor gasto de " << consumo << " KWh, ficara " << valor << " reais" << endl;
+    cin >> valor;
 
     return 0;
 }
