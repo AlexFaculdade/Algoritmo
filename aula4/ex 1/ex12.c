@@ -9,6 +9,6 @@ int main() {
     
     valorTotal = deposito+(deposito*deposito);
     printf("Valor final: %f\n", valorTotal);
-    scanf("%f", &valorFinal);
+    scanf("%f", &valorTotal);
     return 0;
 }
